@@ -19,7 +19,7 @@
 <body>
 
   <!-- Top Announcement Bar -->
-  <div class="top-bar">
+  <div class="top-bar" data-motion="fade-down">
     <div class="container top-bar-content">
       <span class="pulse-indicator"></span>
       <p>Currently open for <strong>Web Developer Internships</strong> &amp; <strong>Junior Frontend</strong> roles &bull; Unnao / Remote</p>
@@ -27,9 +27,9 @@
   </div>
 
   <!-- Header / Navigation -->
-  <header class="site-header" id="header">
+  <header class="site-header" id="header" data-motion="fade-down">
     <div class="container header-inner">
-      <a href="#home" class="brand">
+      <a href="#home" class="brand" data-motion="spring-hover">
         <span class="brand-initials">UA</span>
         <span class="brand-name text-gradient">Upasana Awasthi</span>
       </a>
@@ -39,7 +39,7 @@
         <a href="#projects" class="nav-item">Projects</a>
         <a href="#skills" class="nav-item">Skills</a>
         <a href="#education" class="nav-item">Education</a>
-        <a href="#contact" class="nav-btn">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="nav-btn" data-motion="spring-btn">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
       </nav>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
@@ -54,30 +54,30 @@
     <section class="hero-section" id="home">
       <div class="container hero-layout">
         
-        <div class="hero-text">
-          <div class="greeting-tag">
+        <div class="hero-text" data-motion-group="stagger-up">
+          <div class="greeting-tag" data-motion-item>
             <span class="wave">👋</span> Hello world, I'm
           </div>
           
-          <h1 class="hero-heading">
+          <h1 class="hero-heading" data-motion-item>
             <span class="text-gradient">Upasana Awasthi</span>
             <span class="hero-subtext">I build responsive web interfaces that just work.</span>
           </h1>
 
-          <p class="hero-bio">
+          <p class="hero-bio" data-motion-item>
             I'm a B.Tech student (2023–2027) with an <strong>80% aggregate</strong> at AKTU, passionate about frontend development. I enjoy taking design concepts and turning them into clean, structured HTML, modern CSS, and interactive JavaScript websites.
           </p>
 
-          <div class="hero-cta-group">
-            <a href="#projects" class="cta-primary">
+          <div class="hero-cta-group" data-motion-item>
+            <a href="#projects" class="cta-primary" data-motion="spring-btn">
               <i class="fa-solid fa-laptop-code"></i> See My Work
             </a>
-            <a href="#contact" class="cta-secondary">
+            <a href="#contact" class="cta-secondary" data-motion="spring-btn">
               <i class="fa-regular fa-envelope"></i> Get in Touch
             </a>
           </div>
 
-          <div class="quick-info-strip">
+          <div class="quick-info-strip" data-motion-item>
             <div class="info-cell">
               <span class="info-label">Location</span>
               <span class="info-val">Unnao, UP, India</span>
@@ -95,8 +95,8 @@
           </div>
         </div>
 
-        <div class="hero-profile-card">
-          <div class="profile-frame">
+        <div class="hero-profile-card" data-motion="scale-in">
+          <div class="profile-frame" data-motion="tilt-card">
             <div class="profile-avatar-placeholder">
               <div class="avatar-monogram">UA</div>
               <div class="avatar-badge" title="Actively Learning & Building">
@@ -109,9 +109,9 @@
               <p class="role-desc">Frontend Web Developer</p>
               
               <div class="profile-meta-pills">
-                <span class="pill"><i class="fa-solid fa-graduation-cap"></i> AKTU 2027</span>
-                <span class="pill"><i class="fa-solid fa-certificate"></i> 80% B.Tech</span>
-                <span class="pill"><i class="fa-solid fa-location-dot"></i> Unnao, UP</span>
+                <span class="pill" data-motion="spring-hover"><i class="fa-solid fa-graduation-cap"></i> AKTU 2027</span>
+                <span class="pill" data-motion="spring-hover"><i class="fa-solid fa-certificate"></i> 80% B.Tech</span>
+                <span class="pill" data-motion="spring-hover"><i class="fa-solid fa-location-dot"></i> Unnao, UP</span>
               </div>
 
               <div class="profile-contact-quick">
@@ -124,10 +124,10 @@
               </div>
 
               <div class="profile-actions">
-                <button class="btn-copy" onclick="copyContact('upasanaa948@gmail.com', 'Email copied to clipboard!')">
+                <button class="btn-copy" data-motion="spring-btn" onclick="copyContact('upasanaa948@gmail.com', 'Email copied to clipboard!')">
                   <i class="fa-regular fa-copy"></i> Copy Email
                 </button>
-                <button class="btn-copy" onclick="copyContact('+919695093589', 'Phone number copied!')">
+                <button class="btn-copy" data-motion="spring-btn" onclick="copyContact('+919695093589', 'Phone number copied!')">
                   <i class="fa-solid fa-phone-volume"></i> Copy Phone
                 </button>
               </div>
@@ -141,14 +141,14 @@
     <!-- About Section -->
     <section class="section about-wrapper" id="about">
       <div class="container">
-        <div class="section-title-row">
+        <div class="section-title-row" data-motion="reveal-title">
           <span class="section-num">01.</span>
           <h2 class="section-heading text-gradient">About Me</h2>
           <div class="title-line"></div>
         </div>
 
         <div class="about-content-grid">
-          <div class="about-paragraphs">
+          <div class="about-paragraphs" data-motion="slide-right">
             <p>
               Hi there! My name is Upasana. My journey into web development started with simple curiosities &mdash; understanding how websites like institute portals, forms, and web applications are structured under the hood.
             </p>
@@ -159,7 +159,7 @@
               I believe in writing code that is clean, readable, and easy to maintain. My goal is to work alongside experienced engineers where I can contribute to real client projects, learn best software engineering practices, and grow as a full-stack engineer over time.
             </p>
 
-            <div class="personal-facts">
+            <div class="personal-facts" data-motion="fade-up">
               <h4 class="facts-title text-gradient">A Few Personal Details:</h4>
               <ul class="facts-list">
                 <li><strong>Languages:</strong> Hindi (Native), English (Professional)</li>
@@ -169,10 +169,10 @@
             </div>
           </div>
 
-          <div class="about-highlights-card">
+          <div class="about-highlights-card" data-motion="slide-left">
             <h3 class="card-title text-gradient">What I Bring to the Table</h3>
             
-            <div class="feature-item">
+            <div class="feature-item" data-motion="stagger-item">
               <div class="feat-icon"><i class="fa-solid fa-laptop-code"></i></div>
               <div>
                 <h4 class="text-gradient">Hands-on Frontend Practice</h4>
@@ -180,7 +180,7 @@
               </div>
             </div>
 
-            <div class="feature-item">
+            <div class="feature-item" data-motion="stagger-item">
               <div class="feat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
               <div>
                 <h4 class="text-gradient">Mobile-First Responsive Mindset</h4>
@@ -188,7 +188,7 @@
               </div>
             </div>
 
-            <div class="feature-item">
+            <div class="feature-item" data-motion="stagger-item">
               <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
               <div>
                 <h4 class="text-gradient">Fast Learner &amp; Adaptable</h4>
@@ -203,17 +203,17 @@
     <!-- Featured Projects Section -->
     <section class="section projects-wrapper" id="projects">
       <div class="container">
-        <div class="section-title-row">
+        <div class="section-title-row" data-motion="reveal-title">
           <span class="section-num">02.</span>
           <h2 class="section-heading text-gradient">Featured Project</h2>
           <div class="title-line"></div>
         </div>
 
-        <p class="section-lead">Here is a real project I've designed, coded, and deployed online:</p>
+        <p class="section-lead" data-motion="fade-up">Here is a real project I've designed, coded, and deployed online:</p>
 
         <!-- Main Project Showcase -->
-        <article class="featured-project-card">
-          <div class="project-preview-side">
+        <article class="featured-project-card" data-motion="card-lift">
+          <div class="project-preview-side" data-motion="fade-in">
             <div class="browser-window">
               <div class="window-bar">
                 <span class="window-dot red"></span>
@@ -235,7 +235,7 @@
                   <span class="preview-badge-mock">Institute Web Portal</span>
                   <h4>Welcome to IIMM Ayodhya</h4>
                   <p>Frontend clone replicating institutional layout, announcements, course catalog, and student inquiry portal.</p>
-                  <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="preview-btn-mock">
+                  <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="preview-btn-mock" data-motion="spring-btn">
                     Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 </div>
@@ -243,7 +243,7 @@
             </div>
           </div>
 
-          <div class="project-details-side">
+          <div class="project-details-side" data-motion="fade-in">
             <span class="project-eyebrow">Featured Web Project</span>
             <h3 class="project-name text-gradient">IIMM Ayodhya Website Clone</h3>
             
@@ -269,15 +269,15 @@
             </div>
 
             <div class="project-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>Responsive Design</span>
-              <span>Vercel</span>
+              <span data-motion="spring-hover">HTML5</span>
+              <span data-motion="spring-hover">CSS3</span>
+              <span data-motion="spring-hover">JavaScript</span>
+              <span data-motion="spring-hover">Responsive Design</span>
+              <span data-motion="spring-hover">Vercel</span>
             </div>
 
             <div class="project-links-bar">
-              <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+              <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project-live" data-motion="spring-btn">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Project
               </a>
               <span class="live-status"><span class="green-indicator"></span> Deployed &amp; Active</span>
@@ -291,17 +291,17 @@
     <!-- Skills Section -->
     <section class="section skills-wrapper" id="skills">
       <div class="container">
-        <div class="section-title-row">
+        <div class="section-title-row" data-motion="reveal-title">
           <span class="section-num">03.</span>
           <h2 class="section-heading text-gradient">Skills &amp; Technologies</h2>
           <div class="title-line"></div>
         </div>
 
-        <p class="section-lead">The tools and technologies I use to build websites:</p>
+        <p class="section-lead" data-motion="fade-up">The tools and technologies I use to build websites:</p>
 
-        <div class="skills-grid-clean">
+        <div class="skills-grid-clean" data-motion-group="stagger-cards">
           
-          <div class="skill-group-box">
+          <div class="skill-group-box" data-motion-card>
             <div class="group-title-row">
               <i class="fa-solid fa-code"></i>
               <h3 class="text-gradient">Frontend Development</h3>
@@ -331,7 +331,7 @@
             </ul>
           </div>
 
-          <div class="skill-group-box">
+          <div class="skill-group-box" data-motion-card>
             <div class="group-title-row">
               <i class="fa-brands fa-python"></i>
               <h3 class="text-gradient">Programming &amp; Logic</h3>
@@ -354,7 +354,7 @@
             </ul>
           </div>
 
-          <div class="skill-group-box">
+          <div class="skill-group-box" data-motion-card>
             <div class="group-title-row">
               <i class="fa-solid fa-screwdriver-wrench"></i>
               <h3 class="text-gradient">Workflow &amp; Tools</h3>
@@ -391,16 +391,16 @@
     <!-- Education Section -->
     <section class="section education-wrapper" id="education">
       <div class="container">
-        <div class="section-title-row">
+        <div class="section-title-row" data-motion="reveal-title">
           <span class="section-num">04.</span>
           <h2 class="section-heading text-gradient">Education</h2>
           <div class="title-line"></div>
         </div>
 
-        <div class="education-cards-grid">
+        <div class="education-cards-grid" data-motion-group="stagger-cards">
           
           <!-- B.Tech Card -->
-          <div class="edu-card highlighted">
+          <div class="edu-card highlighted" data-motion-card>
             <div class="edu-badge">Current Pursuit &bull; 2023 - 2027</div>
             <h3 class="edu-degree text-gradient">Bachelor of Technology (B.Tech)</h3>
             <p class="edu-institution">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
@@ -414,7 +414,7 @@
           </div>
 
           <!-- 12th Card -->
-          <div class="edu-card">
+          <div class="edu-card" data-motion-card>
             <div class="edu-badge">Completed 2023</div>
             <h3 class="edu-degree text-gradient">Intermediate (Class XII)</h3>
             <p class="edu-institution">UP Board</p>
@@ -428,7 +428,7 @@
           </div>
 
           <!-- 10th Card -->
-          <div class="edu-card">
+          <div class="edu-card" data-motion-card>
             <div class="edu-badge">Completed 2021</div>
             <h3 class="edu-degree text-gradient">High School (Class X)</h3>
             <p class="edu-institution">UP Board</p>
@@ -448,13 +448,13 @@
     <!-- Contact Section -->
     <section class="section contact-wrapper" id="contact">
       <div class="container">
-        <div class="section-title-row">
+        <div class="section-title-row" data-motion="reveal-title">
           <span class="section-num">05.</span>
           <h2 class="section-heading text-gradient">Get in Touch</h2>
           <div class="title-line"></div>
         </div>
 
-        <div class="contact-box-grid">
+        <div class="contact-box-grid" data-motion="fade-up">
           <div class="contact-pitch">
             <h3 class="text-gradient">Let's build something together</h3>
             <p>
@@ -462,7 +462,7 @@
             </p>
 
             <div class="contact-direct-cards">
-              <a href="mailto:upasanaa948@gmail.com" class="direct-contact-item">
+              <a href="mailto:upasanaa948@gmail.com" class="direct-contact-item" data-motion="spring-hover">
                 <div class="dci-icon"><i class="fa-regular fa-envelope"></i></div>
                 <div>
                   <span class="dci-label">Email Me</span>
@@ -470,7 +470,7 @@
                 </div>
               </a>
 
-              <a href="tel:+919695093589" class="direct-contact-item">
+              <a href="tel:+919695093589" class="direct-contact-item" data-motion="spring-hover">
                 <div class="dci-icon"><i class="fa-solid fa-phone"></i></div>
                 <div>
                   <span class="dci-label">Call / WhatsApp</span>
@@ -478,7 +478,7 @@
                 </div>
               </a>
 
-              <div class="direct-contact-item">
+              <div class="direct-contact-item" data-motion="spring-hover">
                 <div class="dci-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div>
                   <span class="dci-label">Location</span>
@@ -511,7 +511,7 @@
                 <textarea id="message" rows="4" placeholder="Hello Upasana, I came across your portfolio and wanted to reach out regarding..." required></textarea>
               </div>
 
-              <button type="submit" class="submit-button">
+              <button type="submit" class="submit-button" data-motion="spring-btn">
                 <span>Send Message</span>
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
@@ -531,16 +531,16 @@
       </div>
 
       <div class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#education" class="footer-link">Education</a>
+        <a href="#contact" class="footer-link">Contact</a>
       </div>
 
       <div class="footer-bottom-line">
-        <p>Designed &amp; handcrafted with HTML, CSS &amp; JavaScript.</p>
-        <a href="#home" class="scroll-top-link"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+        <p>Designed &amp; handcrafted with HTML, CSS, JavaScript &amp; Motion.</p>
+        <a href="#home" class="scroll-top-link" data-motion="spring-hover"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
       </div>
     </div>
   </footer>
@@ -551,6 +551,8 @@
     <span id="toastMsg">Copied to clipboard!</span>
   </div>
 
+  <!-- Framer Motion / Motion Browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@10.16.4/dist/motion.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
