@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upasana Awasthi &mdash; Frontend Developer</title>
+  <meta name="description" content="Personal portfolio of Upasana Awasthi, a Frontend Developer and B.Tech student building clean, responsive web experiences.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="pulse-indicator"></span>
+      <p>Currently open for <strong>Web Developer Internships</strong> &amp; <strong>Junior Frontend</strong> roles &bull; Unnao / Remote</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <span class="brand-initials">UA</span>
+        <span class="brand-name text-gradient">Upasana Awasthi</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#contact" class="nav-btn">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-layout">
+        
+        <div class="hero-text">
+          <div class="greeting-tag">
+            <span class="wave">👋</span> Hello world, I'm
+          </div>
+          
+          <h1 class="hero-heading">
+            <span class="text-gradient">Upasana Awasthi</span>
+            <span class="hero-subtext">I build responsive web interfaces that just work.</span>
+          </h1>
+
+          <p class="hero-bio">
+            I'm a B.Tech student (2023–2027) with an <strong>80% aggregate</strong> at AKTU, passionate about frontend development. I enjoy taking design concepts and turning them into clean, structured HTML, modern CSS, and interactive JavaScript websites.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="cta-primary">
+              <i class="fa-solid fa-laptop-code"></i> See My Work
+            </a>
+            <a href="#contact" class="cta-secondary">
+              <i class="fa-regular fa-envelope"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="quick-info-strip">
+            <div class="info-cell">
+              <span class="info-label">Location</span>
+              <span class="info-val">Unnao, UP, India</span>
+            </div>
+            <div class="info-divider"></div>
+            <div class="info-cell">
+              <span class="info-label">Education</span>
+              <span class="info-val">B.Tech (23–27) &bull; 80%</span>
+            </div>
+            <div class="info-divider"></div>
+            <div class="info-cell">
+              <span class="info-label">Primary Stack</span>
+              <span class="info-val">HTML &bull; CSS &bull; JS &bull; Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-profile-card">
+          <div class="profile-frame">
+            <div class="profile-avatar-placeholder">
+              <div class="avatar-monogram">UA</div>
+              <div class="avatar-badge" title="Actively Learning & Building">
+                <i class="fa-solid fa-code"></i>
+              </div>
+            </div>
+
+            <div class="profile-details">
+              <h3 class="text-gradient">Upasana Awasthi</h3>
+              <p class="role-desc">Frontend Web Developer</p>
+              
+              <div class="profile-meta-pills">
+                <span class="pill"><i class="fa-solid fa-graduation-cap"></i> AKTU 2027</span>
+                <span class="pill"><i class="fa-solid fa-certificate"></i> 80% B.Tech</span>
+                <span class="pill"><i class="fa-solid fa-location-dot"></i> Unnao, UP</span>
+              </div>
+
+              <div class="profile-contact-quick">
+                <a href="mailto:upasanaa948@gmail.com" class="direct-link">
+                  <i class="fa-regular fa-envelope"></i> upasanaa948@gmail.com
+                </a>
+                <a href="tel:+919695093589" class="direct-link">
+                  <i class="fa-solid fa-phone"></i> +91 9695093589
+                </a>
+              </div>
+
+              <div class="profile-actions">
+                <button class="btn-copy" onclick="copyContact('upasanaa948@gmail.com', 'Email copied to clipboard!')">
+                  <i class="fa-regular fa-copy"></i> Copy Email
+                </button>
+                <button class="btn-copy" onclick="copyContact('+919695093589', 'Phone number copied!')">
+                  <i class="fa-solid fa-phone-volume"></i> Copy Phone
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-wrapper" id="about">
+      <div class="container">
+        <div class="section-title-row">
+          <span class="section-num">01.</span>
+          <h2 class="section-heading text-gradient">About Me</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="about-content-grid">
+          <div class="about-paragraphs">
+            <p>
+              Hi there! My name is Upasana. My journey into web development started with simple curiosities &mdash; understanding how websites like institute portals, forms, and web applications are structured under the hood.
+            </p>
+            <p>
+              Currently, I am in my B.Tech program affiliated with <strong>AKTU (Dr. A.P.J. Abdul Kalam Technical University)</strong>, maintaining a consistent academic record with an <strong>80% score</strong>. Along with my coursework, I spend my time coding layouts, experimenting with responsive design using CSS Flexbox and Grid, and building interactive web interfaces.
+            </p>
+            <p>
+              I believe in writing code that is clean, readable, and easy to maintain. My goal is to work alongside experienced engineers where I can contribute to real client projects, learn best software engineering practices, and grow as a full-stack engineer over time.
+            </p>
+
+            <div class="personal-facts">
+              <h4 class="facts-title text-gradient">A Few Personal Details:</h4>
+              <ul class="facts-list">
+                <li><strong>Languages:</strong> Hindi (Native), English (Professional)</li>
+                <li><strong>Hometown:</strong> 19 Chilauli, Unnao, Uttar Pradesh - 209821</li>
+                <li><strong>Focus Area:</strong> Responsive Web Design, Component Architecture, Clean UI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-highlights-card">
+            <h3 class="card-title text-gradient">What I Bring to the Table</h3>
+            
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h4 class="text-gradient">Hands-on Frontend Practice</h4>
+                <p>Experience building full website clones from scratch using pure HTML5, CSS3, and JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div>
+                <h4 class="text-gradient">Mobile-First Responsive Mindset</h4>
+                <p>Ensuring every page looks great on mobile phones, tablets, and full desktop displays.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <h4 class="text-gradient">Fast Learner &amp; Adaptable</h4>
+                <p>Eager to absorb feedback, pick up modern frontend frameworks (React, Tailwind), and contribute to the team.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-wrapper" id="projects">
+      <div class="container">
+        <div class="section-title-row">
+          <span class="section-num">02.</span>
+          <h2 class="section-heading text-gradient">Featured Project</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <p class="section-lead">Here is a real project I've designed, coded, and deployed online:</p>
+
+        <!-- Main Project Showcase -->
+        <article class="featured-project-card">
+          <div class="project-preview-side">
+            <div class="browser-window">
+              <div class="window-bar">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-url">https://iimm-ayodhya-clone.vercel.app</span>
+              </div>
+              <div class="window-content-preview">
+                <div class="preview-header-mock">
+                  <div class="preview-logo-mock"><i class="fa-solid fa-graduation-cap"></i> IIMM Ayodhya</div>
+                  <div class="preview-links-mock">
+                    <span>Home</span>
+                    <span>About</span>
+                    <span>Courses</span>
+                    <span>Admissions</span>
+                  </div>
+                </div>
+                <div class="preview-hero-mock">
+                  <span class="preview-badge-mock">Institute Web Portal</span>
+                  <h4>Welcome to IIMM Ayodhya</h4>
+                  <p>Frontend clone replicating institutional layout, announcements, course catalog, and student inquiry portal.</p>
+                  <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="preview-btn-mock">
+                    Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details-side">
+            <span class="project-eyebrow">Featured Web Project</span>
+            <h3 class="project-name text-gradient">IIMM Ayodhya Website Clone</h3>
+            
+            <div class="project-description-box">
+              <p>
+                A complete frontend recreation of an educational institute website. Designed to test real-world layout skills including responsive navigation, an announcement notice board, categorized academic courses, and student contact forms.
+              </p>
+            </div>
+
+            <div class="project-takeaways">
+              <div class="takeaway">
+                <i class="fa-solid fa-check"></i>
+                <span>Structured semantic HTML5 layout with accessible headings and forms.</span>
+              </div>
+              <div class="takeaway">
+                <i class="fa-solid fa-check"></i>
+                <span>Custom CSS styling with media queries for full cross-device responsiveness.</span>
+              </div>
+              <div class="takeaway">
+                <i class="fa-solid fa-check"></i>
+                <span>Configured build and deployed live on <strong>Vercel</strong> for public viewing.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>Vercel</span>
+            </div>
+
+            <div class="project-links-bar">
+              <a href="https://iimm-ayodhya-clone.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project-live">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Project
+              </a>
+              <span class="live-status"><span class="green-indicator"></span> Deployed &amp; Active</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-wrapper" id="skills">
+      <div class="container">
+        <div class="section-title-row">
+          <span class="section-num">03.</span>
+          <h2 class="section-heading text-gradient">Skills &amp; Technologies</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <p class="section-lead">The tools and technologies I use to build websites:</p>
+
+        <div class="skills-grid-clean">
+          
+          <div class="skill-group-box">
+            <div class="group-title-row">
+              <i class="fa-solid fa-code"></i>
+              <h3 class="text-gradient">Frontend Development</h3>
+            </div>
+            <ul class="skill-list-items">
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="level">Strong Fundamentals</span>
+                </div>
+                <p class="desc">Semantic markup, SEO basics, form validation, accessible attributes.</p>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="level">Proficient</span>
+                </div>
+                <p class="desc">Flexbox, CSS Grid, custom properties, animations, media queries.</p>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="level">Working Knowledge</span>
+                </div>
+                <p class="desc">DOM manipulation, event handling, ES6 syntax, responsive UI components.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group-box">
+            <div class="group-title-row">
+              <i class="fa-brands fa-python"></i>
+              <h3 class="text-gradient">Programming &amp; Logic</h3>
+            </div>
+            <ul class="skill-list-items">
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="level">Basics &amp; Logic</span>
+                </div>
+                <p class="desc">Data types, conditional statements, loops, functions, object-oriented concepts.</p>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+                  <span class="level">Continuous Practice</span>
+                </div>
+                <p class="desc">Algorithm flow, logical debugging, code tracing, and step-by-step problem breakdown.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group-box">
+            <div class="group-title-row">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3 class="text-gradient">Workflow &amp; Tools</h3>
+            </div>
+            <ul class="skill-list-items">
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel</span>
+                  <span class="level">Deployment</span>
+                </div>
+                <p class="desc">Live project deployment, preview branches, and custom domain setup.</p>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+                  <span class="level">Primary IDE</span>
+                </div>
+                <p class="desc">Extensions, formatting, live server, Chrome DevTools debugging.</p>
+              </li>
+              <li>
+                <div class="skill-name-row">
+                  <span class="name"><i class="fa-brands fa-github"></i> Git / GitHub</span>
+                  <span class="level">Foundations</span>
+                </div>
+                <p class="desc">Version control fundamentals, pushing repositories, code backups.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-wrapper" id="education">
+      <div class="container">
+        <div class="section-title-row">
+          <span class="section-num">04.</span>
+          <h2 class="section-heading text-gradient">Education</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="education-cards-grid">
+          
+          <!-- B.Tech Card -->
+          <div class="edu-card highlighted">
+            <div class="edu-badge">Current Pursuit &bull; 2023 - 2027</div>
+            <h3 class="edu-degree text-gradient">Bachelor of Technology (B.Tech)</h3>
+            <p class="edu-institution">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+            <div class="edu-score-pill">
+              <span class="score-number">80%</span>
+              <span class="score-text">Academic Aggregate</span>
+            </div>
+            <p class="edu-description">
+              Pursuing undergraduate engineering with coursework covering software development, computer fundamentals, programming languages, and web technologies.
+            </p>
+          </div>
+
+          <!-- 12th Card -->
+          <div class="edu-card">
+            <div class="edu-badge">Completed 2023</div>
+            <h3 class="edu-degree text-gradient">Intermediate (Class XII)</h3>
+            <p class="edu-institution">UP Board</p>
+            <div class="edu-score-pill">
+              <span class="score-number">76%</span>
+              <span class="score-text">Board Examination</span>
+            </div>
+            <p class="edu-description">
+              Senior secondary education in Science and Mathematics, developing analytical and logical reasoning skills.
+            </p>
+          </div>
+
+          <!-- 10th Card -->
+          <div class="edu-card">
+            <div class="edu-badge">Completed 2021</div>
+            <h3 class="edu-degree text-gradient">High School (Class X)</h3>
+            <p class="edu-institution">UP Board</p>
+            <div class="edu-score-pill">
+              <span class="score-number">78%</span>
+              <span class="score-text">Board Examination</span>
+            </div>
+            <p class="edu-description">
+              Completed foundational secondary schooling with strong performance across Science, Mathematics, and Languages.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-wrapper" id="contact">
+      <div class="container">
+        <div class="section-title-row">
+          <span class="section-num">05.</span>
+          <h2 class="section-heading text-gradient">Get in Touch</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="contact-box-grid">
+          <div class="contact-pitch">
+            <h3 class="text-gradient">Let's build something together</h3>
+            <p>
+              I am currently looking for <strong>Web Developer internships</strong>, junior frontend opportunities, and collaborative projects. Whether you have a question, an opportunity, or just want to connect, feel free to reach out.
+            </p>
+
+            <div class="contact-direct-cards">
+              <a href="mailto:upasanaa948@gmail.com" class="direct-contact-item">
+                <div class="dci-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="dci-label">Email Me</span>
+                  <span class="dci-value">upasanaa948@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919695093589" class="direct-contact-item">
+                <div class="dci-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="dci-label">Call / WhatsApp</span>
+                  <span class="dci-value">+91 9695093589</span>
+                </div>
+              </a>
+
+              <div class="direct-contact-item">
+                <div class="dci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="dci-label">Location</span>
+                  <span class="dci-value">19 Chilauli, Unnao, UP - 209821</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <h4 class="text-gradient">Send Me a Direct Message</h4>
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="What's your name?" required>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Your Email / Contact</label>
+                <input type="text" id="email" placeholder="How can I get back to you?" required>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="e.g. Web Developer Opportunity / Freelance Project" required>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Hello Upasana, I came across your portfolio and wanted to reach out regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-title text-gradient">Upasana Awasthi</p>
+        <p class="footer-subtitle">Frontend Web Developer &bull; B.Tech Student (AKTU)</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom-line">
+        <p>Designed &amp; handcrafted with HTML, CSS &amp; JavaScript.</p>
+        <a href="#home" class="scroll-top-link"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-box">
+    <i class="fa-solid fa-check-circle"></i>
+    <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
